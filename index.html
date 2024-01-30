@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>zad 1</h1>
+    <!--Bastian Wyciński zad 2-->
+    <button onclick="cenaBiletuWro()">Wrocław Główny</button>
+    <button onclick="cenaBiletuJaw()">Jaworzyna Śląska</button>
+    <button onclick="cenaBiletuSob()">Sobótka</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function cenaBiletuWro(){
+            document.getElementById("demo").innerHTML = "25zł";
+        }
+
+        function cenaBiletuJaw(){
+            document.getElementById("demo").innerHTML = "12zł";
+        }
+        function cenaBiletuSob(){
+            document.getElementById("demo").innerHTML = "13zł";
+        }
+
+    </script>
+    
+    <hr>
+    <h1>zad 2</h1>
+    <!--Krystian Tarnowski zad 1-->
+    <form>
+        <input type="radio" name="box" onclick="radiofunkcja(this.value)" value="50">Wyrywanie zęba<br>
+        <input type="radio" name="box" onclick="radiofunkcja(this.value)" value="350">Czyszczenie kanałowe<br>
+        <input type="radio" name="box" onclick="radiofunkcja(this.value)" value="100">Odkamienianie<br>
+      
+        Cena wizyty: <input type="text" id="result2">
+        
+    </form>
+      
+      <script>
+      function radiofunkcja(box) {
+        document.getElementById("result").value = box;
+      }
+      </script>
+    <hr>
+    <h1>zad 3</h1>
+    <!--Izabela Majcherczyk zad 1-->
+
+    <button onclick="zad3(4, 3)">Wynik</button>
+    
+    <script>
+    function zad3(a, b) {
+      return a*b
+    }
+    </script>
+
+
+
+</body>
+</html>
